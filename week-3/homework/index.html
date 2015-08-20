@@ -65,9 +65,14 @@ body {
    border radius: 5px;
  }
  .content-box ul li:first-child{
-   display: inline;
-  font-size: 20px;
-    color: blue;
+  display: inline;
+  padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	padding-right: 15px;
+ 	padding-left: 15px;
+ 	border-radius: 5px;
+  font-size: 18px;
+  color: blue;
   border-radius: 5px;
    }
    p {
@@ -81,15 +86,31 @@ body {
  }
 
  .button {
+  font-family: "Lucida Sans", sans-serif;
  	background-color: #0431B4;
 	font-size: 18px;
- 	padding-top: 5px;
- 	padding-bottom: 5px;
- 	padding-right: 10px;
- 	padding-left: 10px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	padding-right: 15px;
+ 	padding-left: 15px;
  	border-radius: 5px;
  	border-color: #08088A;
  }
+ hr {
+ 	width: 62%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+ h3 {
+	text-align: center;
+	color: #A4A4A4;
+	font-weight: lighter;
+	font-size: 14px;
+}
+img {
+  width: 280px;
+  float: left;
+}
 </style>
 </head>
 <body>
@@ -111,7 +132,12 @@ body {
 		For a complete list of products, please visit The Original Illustrated Catalog of ACME
 		Products.
 	</p>
-  <img src="http://acme.com/catalog/blasting.jpg"alt="ACME Blasting Powder" width="275" height="230"/>
+  <table>
+    <tr>
+      <td>
+  <img src="http://acme.com/catalog/blasting.jpg"alt="ACME Blasting Powder" width="280" height="250"/>
+</td>
+<td>
   <p>
     Due to its highly volatile and explosive nature, do not ignite ACME Blasting Powder
 		until you are in a safe location.
@@ -121,7 +147,13 @@ body {
 			<li class="button">Add to Cart</li>
 	  </ul>
 	</p>
-  <img src="http://acme.com/catalog/hair.jpg"alt="ACME Hair Grower" width"275" height="230"/>
+</td>
+</tr>
+<tr>
+  <td>
+  <img src="http://acme.com/catalog/hair.jpg"alt="ACME Hair Grower" width"280" height="250"/>
+</td>
+  <td>
   <p>
 		ACME Hair Grower (patented) is guaranteed to make short hair long in a flash.
 		<ul>
@@ -129,7 +161,13 @@ body {
 			<li class="button">Add to Cart</li>
 	  </ul>
 	</p>
-  <img src="http://acme.com/catalog/acmejetuni.jpg"alt="ACME Jet-Propelled Unicycle" width"275" height="230"/>
+</td>
+</tr>
+  <tr>
+    <td>
+  <img src="http://acme.com/catalog/acmejetuni.jpg"alt="ACME Jet-Propelled Unicycle" width"280" height="250"/>
+</td>
+<td>
 	<p>
     Another item in the ACME Jet Propelled line of products is the ACME Jet Propelled
 		 Unicycle, which even the most unbalanced individual can ride with ease.
@@ -138,13 +176,13 @@ body {
 			<li class="button">Add to Cart</li>
 	   </ul>
 	</p>
+</td>
+</tr>
+</table>
 </div>
-</main>
-<footer>
 	<hr>
-	<p> Copyright, 2015</p>
+	<h3> Copyright, 2015</h3>
 </hr>
-
-</footer>
+</main>
 </body>
 </html>
