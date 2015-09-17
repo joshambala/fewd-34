@@ -13,7 +13,7 @@
 <script src="./movie-search_files/jquery.min.js"></script>
 
 <script>
-var movies = {
+var sampleResult = {
   "Search": [
     {
       "Title": "Cool Runnings",
@@ -23,39 +23,15 @@ var movies = {
     }
   ]
 }
-[
-  {
-    "Title": "Terminator 2",
-    "Type": "movie",
-    "Year": "1991",
-    "imdbID": "tt0106611"
-  }
-]
 
-[
-  {
-    "Title": "Interstellar",
-    "Type": "movie",
-    "Year": "2014",
-    "imdbID": "tt0106611"
-  }
-]
+//Your code here!
+//1. when you click the search button, return "Cool Runnings"
+function formSubmitted(event) {
+  event.preventDefault();
+
+$("<li>").text(sampleResult["Search"][0]["Title"]).appendTo("#movie-list")
 }
-
-// Your code here!
-//1.when a button is blicked displayMovie
-
-//2. do a loop through each movie
-
-
-function displayMovie(movie) {
-  alert(movie[:"Title"]);
-}
-
-function success(results) {
-  results ["Search"].forEach(displayMovie)
-}
-$.get("http://www.omdbapi.com/?s=terminator", success);
+$("#movie-search-form").on("submit", formSubmitted);
 </script>
 
 <style>
