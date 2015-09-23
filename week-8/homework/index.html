@@ -72,8 +72,13 @@
     // Your code goes here.
 
     var button = document.querySelector("#list-movies");
+    button.addEventListener("click",mouseClicked);
 
-      function showMovies(movie){
+    function mouseClicked(event){
+      movies.forEarch(showMovie);
+    }
+
+      function showMovie(movie){
       var list = document.querySelector("#movies");
       var movieInfo = document.createElement("li");
       var movieTitle = document.createElement("div");
