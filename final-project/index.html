@@ -15,7 +15,6 @@ div#memory_board{
 div#memory_board > div{
 	background: url("http://joshambala.github.io/fewd-34/final-project/Card-Back.png");
 	border:#000 1px solid;
-	border-radius: 10px;
 	width:71px;
 	height:71px;
 	float:left;
@@ -25,7 +24,13 @@ div#memory_board > div{
 	cursor:pointer;
 	text-align:center;
 }
-
+div#memory_board > div > img {
+	width:71px;
+	height:71px;
+	font-size:71px;
+	cursor:pointer;
+	text-align:center;
+}
 </style>
 <script>
 
@@ -54,7 +59,7 @@ function newBoard(){
 function memoryFlipTile(tile,val){
 	if(tile.innerHTML == "" && memory_values.length < 2){
 		tile.style.background = '#FFF';
-		tile.innerHTML = '<img src="' + val + '.jpg"/>';
+		tile.innerHTML = '<img src="'+ val +'.jpg"/>';
 		if(memory_values.length == 0){
 			memory_values.push(val);
 			memory_tile_ids.push(tile.id);
